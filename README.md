@@ -69,3 +69,16 @@ Run these steps in order from a terminal.
 
 - `npm run check`: checks your `.env` and that you can reach the Toolshop API.
 - `npm test`: runs the Playwright tests in `tests/`.
+
+## TypeScript Practice
+
+The `src/ts-basics/` folder contains exercises covering:
+- Basic TypeScript programs
+- Functions
+- Objects
+- Optional chaining
+- Tuples
+- Type aliases
+- Union types
+
+The `src/profile-validator.ts` file defines a UserProfile type and a function that checks notification settings using optional chaining and nullish coalescing.
