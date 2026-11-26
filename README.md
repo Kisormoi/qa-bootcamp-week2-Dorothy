@@ -7,7 +7,8 @@ This is the starting point for Week 2 of the QA bootcamp. During the week you wi
 - Postman (API testing)
 - The Toolshop REST API
 
-There are no tests in this repo. You will write them during the week.
+
+The repository contains Playwright UI and API tests developed during the bootcamp.
 
 ## Prerequisites
 
@@ -21,26 +22,24 @@ Install these before you start:
 
 Run these steps in order from a terminal.
 
-1. Clone the repo and open the folder:
+Clone the repo and open the folder:
 
    ```bash
    git clone <repo-url>
    cd qa-bootcamp-week2-starter
    ```
 
-2. Install the dependencies:
+1. Install the dependencies and Chromium:
 
    ```bash
    npm install
    ```
 
-3. Install the Chromium browser for Playwright:
-
    ```bash
    npx playwright install chromium
    ```
 
-4. Copy `.env.example` to `.env`:
+2. Copy `.env.example` to `.env`:
 
    ```bash
    cp .env.example .env
@@ -48,7 +47,17 @@ Run these steps in order from a terminal.
 
    `.env` already contains the Toolshop website URL (`TOOLSHOP_URL`) and the Toolshop API URL (`TOOLSHOP_API_URL`). Only change them if your trainer gives you different URLs.
 
-5. Check that your setup works:
+3. Run the automated tests
+
+   ```bash
+     npm test
+     ```
+
+    This runs the Playwright test suite.
+
+   Additional Verification
+
+  Check that your setup works:
 
    ```bash
    npm run check

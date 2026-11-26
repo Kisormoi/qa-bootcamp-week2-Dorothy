@@ -6,6 +6,7 @@ export default defineConfig({
   reporter: "list",
   use: {
     baseURL: process.env.TOOLSHOP_URL ?? "https://practicesoftwaretesting.com",
+    
   },
   projects: [
     {
