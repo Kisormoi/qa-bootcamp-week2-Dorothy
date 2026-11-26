@@ -25,7 +25,7 @@ Run these steps in order from a terminal.
 Clone the repo and open the folder:
 
    ```bash
-   git clone <repo-url>
+   git clone https://github.com/Kisormoi/qa-bootcamp-week2-Dorothy.git qa-bootcamp-week2-new
    cd qa-bootcamp-week2-starter
    ```
 
