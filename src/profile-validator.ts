@@ -2,12 +2,12 @@ type UserProfile = {
     id: number;
     username: string;
     settings?: {
-        notifications: boolean;
+        notifications?: boolean;
     };
 };
 
 // User with Settings and notifications
-let userWithNotifications: UserProfile = {
+let user1: UserProfile = {
     id: 1,
     username: "Dorothy",
     settings: {
@@ -16,7 +16,7 @@ let userWithNotifications: UserProfile = {
 };
 
 // User with No settings
-let userWithoutSettings: UserProfile = {
+let user2: UserProfile = {
     id: 2,
     username: "Kisormoi"
     
@@ -24,12 +24,10 @@ let userWithoutSettings: UserProfile = {
 };
 // User with Settings and without notifications
 
-let settingsWithoutNotifications: UserProfile = {
+let user3: UserProfile = {
     id: 3,
     username: "DKisormoi",
-    settings: {
-        notifications: false
-    }
+    settings: {}
 };
 
 function isNotified(user: UserProfile): boolean {
@@ -37,12 +35,11 @@ function isNotified(user: UserProfile): boolean {
 }
 
 // Display users
-console.log(userWithNotifications);
-console.log(userWithoutSettings);
-console.log(settingsWithoutNotifications);
+console.log(user1);
+console.log(user2);
+console.log(user3);
 
 // Test notification status
-console.log("Dorothy notified:", isNotified(userWithNotifications));
-console.log("Kisormoi notified:", isNotified(userWithoutSettings));
-console.log("DKisormoi notified:", isNotified(settingsWithoutNotifications));
-
+console.log(`${user1.username}: ${isNotified(user1)}`);
+console.log(`${user2.username}: ${isNotified(user2)}`);
+console.log(`${user3.username}: ${isNotified(user3)}`);
