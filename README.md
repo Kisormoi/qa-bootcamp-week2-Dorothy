@@ -82,3 +82,25 @@ The `src/ts-basics/` folder contains exercises covering:
 - Union types
 
 The `src/profile-validator.ts` file defines a UserProfile type and a function that checks notification settings using optional chaining and nullish coalescing.
+
+## Exercise: Save Message Drill
+
+## Objective
+
+- To test the Save button and verify that the correct success message is displayed after clicking it.
+
+## Test coverage
+
+- Open the local HTML page.
+- Locate and click the Save button.
+- Read the status message.
+- Verify that the expected message is displayed.
+- Identify potential causes of flaky tests.
+
+## Key learnings
+
+- Understanding fixed waits and their limitations.
+
+## Running test
+
+npx playwright test tests/drill
